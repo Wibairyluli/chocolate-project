@@ -12,30 +12,22 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-.container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-.advantages {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #1e1823;
+img {
+  display: block;
 }
 .container {
   width: 375px;
@@ -44,6 +36,28 @@
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (max-width:374px) {
+  .container {width: 100%;}
+  
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1e1823;
+}
+
 ::after,
 ::before {
   box-sizing: border-box;
@@ -58,6 +72,28 @@
   align-items: center;
 
 }
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+.div-advantages-icon {
+  box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 7.3px;
+width: 62px;
+height: 62px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 365px;
+margin-bottom: 22px;
+}
+.advantages-icon {
+  fill: #FD9222;
+}
+
 .headers-for-advantages {
   color: #ffffff;
   width: 173px;
@@ -68,6 +104,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 18px;
 }
 .discrabe-for-advantages {
   max-width: 308px;
@@ -78,4 +115,11 @@
   line-height: 17px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width:768px) {
+  .list-advantages {
+    justify-content:start;
+    gap: 50px 60px;
+  }
+  
 }
